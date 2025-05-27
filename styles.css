@@ -383,24 +383,64 @@ footer {
 
 /* Legal Pages */
 .legal-content {
-    padding: 60px 0;
+    padding: 60px 20px;
     max-width: 800px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .legal-content h1 {
     margin-bottom: 40px;
     font-size: 36px;
+    line-height: 1.3;
+}
+
+.legal-text {
+    background: rgba(51, 44, 44, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 30px;
+    margin: 20px 0;
 }
 
 .legal-text h2 {
     margin: 30px 0 15px;
     font-size: 24px;
+    line-height: 1.4;
 }
 
 .legal-text p {
     margin-bottom: 20px;
     color: rgba(246, 246, 246, 0.9);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .legal-content {
+        padding: 40px 20px;
+    }
+
+    .legal-content h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .legal-text {
+        padding: 20px;
+        margin: 15px 0;
+    }
+
+    .legal-text h2 {
+        font-size: 20px;
+        margin: 20px 0 12px;
+    }
+
+    .legal-text p {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
 }
 
 /* Support Page */
