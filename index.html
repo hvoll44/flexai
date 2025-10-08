@@ -31,7 +31,7 @@
             gap: 60px;
             align-items: center;
             text-align: left;
-            padding: 160px 20px 120px;
+            padding: 100px 20px 120px;
         }
         .hero-copy h1 {
             font-size: 60px;
@@ -117,6 +117,20 @@
             .carousel-slide img { height: 360px; }
         }
 
+        /* App Store Buttons Responsive */
+        @media (max-width: 600px) {
+            .app-store-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            .store-button img {
+                height: 50px;
+                width: auto;
+                min-width: 150px;
+            }
+        }
+
         /* ---------- TRUST ---------- */
         .trust {
             padding: 80px 0;
@@ -125,22 +139,19 @@
     </style>
 </head>
 <body>
-    <div class="background-overlay"></div>
-
     <!-- NAV -->
     <nav>
         <div class="logo">FlexAI</div>
         <div class="company-info">AtlasCode LLC</div>
-        <a href="https://apps.apple.com/us/app/flexai/id6744620743" class="cta-button" target="_blank" rel="noopener">Download</a>
     </nav>
 
     <main>
         <!-- HERO SECTION -->
         <section class="hero">
             <div class="hero-copy">
-                <h1>Workout Plans <br/>That Learn From You</h1>
-                <p class="subtitle">AI-powered programs that adapt in real-time, whether you train at home or in the gym.</p>
-                <div class="app-store-buttons" style="justify-content:flex-start;">
+                <h1>Weight Lifting <br/>Workout Palnner</h1>
+                <p class="subtitle">An AI fitness trainer that generates personalized workouts to achieve your goals.</p>
+                <div class="app-store-buttons" style="justify-content:center;">
                     <a href="https://apps.apple.com/us/app/flexai/id6744620743" class="store-button" target="_blank" rel="noopener"><img src="./assets/appstore.png" alt="Download on the App Store"></a>
                     <a href="https://play.google.com/store/apps/details?id=com.companyname.flexai" class="store-button" target="_blank" rel="noopener"><img src="./assets/googleplay.png" alt="Get it on Google Play"></a>
                 </div>
@@ -243,7 +254,7 @@
     <!-- Nav scroll effect -->
     <script>
         const nav = document.querySelector('nav');
-        window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 100));
+        window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 50));
     </script>
 </body>
 </html>
